@@ -1,22 +1,18 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using DoggieCreationsFramework;
+﻿using DoggieCreationsFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DoggieCreationsUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class DcHelpersUnitTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void FormatString_GetLoggingMessage_Equals()
         {
-            var result = "asf{0}".Formatteer();
-            var applicationExceptions = DcString.Logging;
-            var message = applicationExceptions[result].Message;
-            Assert.AreEqual("Damn", message);
+            "asdf".Formatteer();
+            var dic = ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging;
+            var message = dic["asdf"].Message;
+            Assert.AreEqual("asdf: System.String", message);
         }
     }
 }
