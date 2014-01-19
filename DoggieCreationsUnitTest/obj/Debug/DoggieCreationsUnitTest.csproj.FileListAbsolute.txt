@@ -1,0 +1,7 @@
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsUnitTest.dll
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsUnitTest.pdb
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsFramework.dll
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsFramework.pdb
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\ResolveAssemblyReference.cache
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.dll
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.pdb

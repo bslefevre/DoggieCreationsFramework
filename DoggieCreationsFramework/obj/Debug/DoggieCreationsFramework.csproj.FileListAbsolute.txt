@@ -1,0 +1,5 @@
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\ResolveAssemblyReference.cache
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\DoggieCreationsFramework.dll
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\DoggieCreationsFramework.pdb
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.dll
+c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.pdb
