@@ -12,7 +12,7 @@ namespace DoggieCreationsFramework
         public static string Formatteer(this string @string)
         {
             var keyValuePair = DcType<string>.Formatteer(@string);
-            Logging.Add(keyValuePair);
+            
             return keyValuePair.Key;
         }
     }
