@@ -29,9 +29,18 @@ namespace DoggieCreationsUnitTest
         public void FormatString_FormatteerNormal_Equals()
         {
             var result = "{0} - waarde".Formatteer("test");
-            var dic = ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging;
-            var message = dic.FirstOrDefault().Value;
+            Assert.AreEqual(1, ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Count());
             Assert.AreEqual("test - waarde", result);
+        }
+
+        [TestMethod]
+        public void FormatString_WithTranslate_Equals()
+        {
+            var first = "hallo";
+            var second = TranslateClass.Translate(first, "nl", "en");
+            var result = "'{first}' is in het Engels '{second}'".Formatteer(() => new[] { first, second });
+            Assert.AreEqual(2, ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Count());
+            Assert.AreEqual("'hallo' is in het Engels 'hello'", result);
         }
 
         [TestMethod]
