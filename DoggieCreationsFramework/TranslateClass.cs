@@ -24,7 +24,6 @@ namespace DoggieCreationsFramework
             }
             var doc = new HtmlDocument();
             doc.LoadHtml(result);
-            Thread.Sleep(100);
             var selectSingleNode = doc.DocumentNode.SelectSingleNode(string.Format("//span[@title='{0}']", input));
             return selectSingleNode != null ? selectSingleNode.InnerText : string.Empty;
         }
