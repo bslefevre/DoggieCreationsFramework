@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection.Emit;
+using System.Windows.Forms;
 
 namespace DoggieCreationsFramework
 {
@@ -103,6 +105,34 @@ namespace DoggieCreationsFramework
                 return new KeyValuePair<string, object>(propertyName, value);
             }
             return new KeyValuePair<string, object>();
+        }
+    }
+
+    public static class DcControl
+    {
+        public static void SetFullWidthToAllControls(this System.Windows.Forms.Control.ControlCollection controlCollection)
+        {
+            var ownerControl = controlCollection.Owner;
+            var maxWidth = ownerControl.Parent != null ? ownerControl.Parent.Width : (int?)null;
+            if (!maxWidth.HasValue) return;
+
+            maxWidth = maxWidth - ownerControl.Margin.Horizontal - ownerControl.Parent.Margin.Horizontal;
+
+            controlCollection.Owner.Width = maxWidth.Value;
+            foreach (var control in controlCollection.Cast<Control>())
+            {
+                control.Width = maxWidth.Value - control.Margin.Horizontal;
+            }
+        }
+        public static void AddControl(this System.Windows.Forms.Control.ControlCollection controlCollection, Control controlToAdd)
+        {
+            var combinedHeight = 0;
+            foreach (var control in controlCollection.Cast<Control>())
+            {
+                combinedHeight += control.Height;
+            }
+            controlToAdd.Location = new Point(controlToAdd.Location.X, combinedHeight);
+            controlCollection.Add(controlToAdd);
         }
     }
 }

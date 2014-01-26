@@ -24,7 +24,6 @@ namespace DoggieCreationsWindowsFormsApplication
 
         private static Assembly GetResourcedAssembly(object sender, ResolveEventArgs arg)
         {
-
             if (arg.Name.StartsWith("DoggieCreationsFramework")) return Assembly.Load(Properties.Resources.DoggieCreationsFramework);
             else if (arg.Name.StartsWith("HtmlAgilityPack")) return Assembly.Load(Properties.Resources.HtmlAgilityPack);
             return null;

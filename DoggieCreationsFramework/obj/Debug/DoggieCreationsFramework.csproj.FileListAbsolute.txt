@@ -8,6 +8,5 @@ C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramewo
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.xml
-C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.csprojResolveAssemblyReference.cache
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.pdb
