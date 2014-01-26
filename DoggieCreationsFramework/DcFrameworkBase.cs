@@ -21,9 +21,24 @@ namespace DoggieCreationsFramework
             }
         }
 
+        private static LoggerType? _activeLogger;
+        protected static LoggerType ActiveLogger
+        {
+            get
+            {
+                if (!_activeLogger.HasValue) return LoggerType.UnitTest;
+                return _activeLogger.Value;
+            }
+        }
+
         public static IDoggieCreationsLogger Logging
         {
-            get { return Loggers[LoggerType.UnitTest]; }
+            get { return Loggers[ActiveLogger]; }
+        }
+
+        public static LoggerType SetLoggingType
+        {
+            set { _activeLogger = value; }
         }
 
         public static void AddLogging(object t)

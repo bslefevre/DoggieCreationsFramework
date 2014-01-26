@@ -10,6 +10,12 @@ namespace DoggieCreationsUnitTest
     [TestClass]
     public class DcHelpersUnitTest
     {
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            DcFrameworkBase.SetLoggingType = DcFrameworkBase.LoggerType.UnitTest;
+        }
+        
         [TestMethod]
         public void FormatString_GetLoggingMessage_Equals()
         {
@@ -32,8 +38,8 @@ namespace DoggieCreationsUnitTest
         public void FormatString_FormatteerExpert_Equals()
         {
             var test = "waarde";
-            var test2 = "waarde2";
-            var result = "{test} - hallo".Formatteer(() => new[] {test, test2});
+            var test2 = "hallo";
+            var result = "{test} - {test2}".Formatteer(() => new[] {test, test2});
             Assert.AreEqual(2, ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Count());
             Assert.AreEqual("waarde - hallo", result);
         }
@@ -43,6 +49,12 @@ namespace DoggieCreationsUnitTest
         {
             var vertaaldeTekst = TranslateClass.Translate(input: "Hoe gaat het?", from: "nl", to: "es");
             Assert.AreEqual("¿Cómo estás?", vertaaldeTekst);
+        }
+
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Clear();
         }
     }
 }
