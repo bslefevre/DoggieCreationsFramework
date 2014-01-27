@@ -2,7 +2,6 @@ c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCre
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsUnitTest.pdb
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsFramework.dll
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsFramework.pdb
-c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\ResolveAssemblyReference.cache
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.dll
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.pdb
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\DoggieCreationsUnitTest.dll
@@ -15,3 +14,7 @@ C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTes
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.csprojResolveAssemblyReference.cache
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.pdb
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\HtmlAgilityPack.xml
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.csprojResolveAssemblyReference.cache

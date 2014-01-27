@@ -1,4 +1,3 @@
-c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\ResolveAssemblyReference.cache
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\DoggieCreationsFramework.dll
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\DoggieCreationsFramework.pdb
 c:\users\bjorn.le.fevre.hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.dll
@@ -10,3 +9,7 @@ C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramewo
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.xml
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.pdb
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.dll
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\HtmlAgilityPack.xml
+C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.csprojResolveAssemblyReference.cache
