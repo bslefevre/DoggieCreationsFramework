@@ -43,7 +43,12 @@ namespace DoggieCreationsFramework
 
         public static void AddLogging(object t)
         {
-            Loggers[LoggerType.UnitTest].AddLogging(t);
+            Loggers[ActiveLogger].AddLogging(t);
+        }
+
+        public static void AddLogging(string message, object t)
+        {
+            Loggers[ActiveLogger].AddLogging(message, t);
         }
 
         public enum LoggerType

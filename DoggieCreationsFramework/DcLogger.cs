@@ -17,6 +17,11 @@ namespace DoggieCreationsFramework
         {
             throw new NotImplementedException();
         }
+
+        public void AddLogging(string message, object @object)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class DoggieCreationsUnitTestLogger : IDoggieCreationsLogger
@@ -41,27 +46,39 @@ namespace DoggieCreationsFramework
         {
             Logging.Add<object, Logging>(@object, new Logging(@object));
         }
+
+        public void AddLogging(string message, object @object)
+        {
+            Logging.Add<object, Logging>(@object, new Logging(message, @object));
+        }
     }
 
     public interface IDoggieCreationsLogger : IDisposable
     {
         void AddLogging(object @object);
+        void AddLogging(string message, object @object);
     }
 
     public class Logging : Exception
     {
         private readonly object _object;
+        private readonly string _message;
+
         public Logging(object @object)
         {
+            _object = @object;
+            _message = string.Format("{0}: {1}", _object, _object.GetType());
+        }
+
+        public Logging(string message, object @object)
+        {
+            _message = message;
             _object = @object;
         }
 
         public override string Message
         {
-            get
-            {
-                return string.Format("{0}: {1}", _object, _object.GetType());
-            }
+            get { return _message; }
         }
     }
 }

@@ -24,9 +24,9 @@ namespace DoggieCreationsFramework
             return formattedString;
         }
 
-        public static string Formatteer(this string @string, Expression<Func<string[]>> expression)
+        public static string Formatteer(this string @string, Expression<Func<object[]>> expression)
         {
-            var propertyNameAndValueDictionary = MemberInfoGetting.GetPropertyNameAndValue<string[]>(expression);
+            var propertyNameAndValueDictionary = MemberInfoGetting.GetPropertyNameAndValue(expression);
 
             foreach (var kvp in propertyNameAndValueDictionary)
             {
@@ -39,13 +39,13 @@ namespace DoggieCreationsFramework
         /// <summary>
         /// To split the string in pieces by NewRule and end of a sentence.
         /// </summary>
-        /// <param name="text">List of sentences to translate.</param>
+        /// <param name="string">List of sentences to translate.</param>
         /// <returns></returns>
-        public static IEnumerable<string> SplitString(string text)
+        public static IEnumerable<string> SplitString(this string @string)
         {
             var splittedStringList = new List<string>();
 
-            var splittedTextArray = text.Split('\n');
+            var splittedTextArray = @string.Split('\n');
 
             foreach (var s in splittedTextArray)
             {
@@ -119,6 +119,8 @@ namespace DoggieCreationsFramework
 
             var safeValue = string.IsNullOrEmpty(waarde) ? null : Convert.ChangeType(waarde, underlyingType);
 
+            AddLogging("from: '{waarde}' => to: '{safeValue}'".Formatteer(() => new[] {waarde, safeValue}), safeValue);
+            
             return (T)safeValue;
         }
     }
@@ -135,7 +137,7 @@ namespace DoggieCreationsFramework
             {
                 foreach (var memberEx in ext.Expressions)
                 {
-                    var kvp = GetMemberName<object>(Expression.Lambda<Func<object>>(memberEx));
+                    var kvp = GetMemberName(Expression.Lambda<Func<object>>(memberEx));
                     propertyNameAndValueDictionary.Add(kvp.Key, kvp.Value);
                 }
             }
@@ -152,14 +154,14 @@ namespace DoggieCreationsFramework
                 {
                     foreach (var memberEx in ext.Expressions)
                     {
-                        return GetMemberName<object>(Expression.Lambda<Func<object>>(memberEx));
+                        return GetMemberName(Expression.Lambda<Func<object>>(memberEx));
                     }
                 }
             }
             else
             {
                 var member = (MemberExpression)memberExpression.Body;
-                string propertyName = member.Member.Name;
+                var propertyName = member.Member.Name;
                 T value = memberExpression.Compile()();
                 AddLogging(string.Format("propertyName: {0} - value: {1}", propertyName, value));
 
