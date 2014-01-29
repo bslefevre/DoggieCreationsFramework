@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -100,6 +101,25 @@ namespace DoggieCreationsFramework
         {
             AddLogging(@t);
             return @t;
+        }
+
+        public static T ParseWaarde(string waarde)
+        {
+            if (string.IsNullOrEmpty(waarde))
+                return default(T);
+
+            if (typeof(T) == typeof(DateTime))
+                return (dynamic)DateTime.Parse(waarde, CultureInfo.InvariantCulture);
+
+            if (typeof(T) == typeof(string))
+                return (dynamic)waarde;
+
+            var underlyingType = Nullable.GetUnderlyingType(typeof(T))
+                ?? typeof(T);
+
+            var safeValue = string.IsNullOrEmpty(waarde) ? null : Convert.ChangeType(waarde, underlyingType);
+
+            return (T)safeValue;
         }
     }
 
