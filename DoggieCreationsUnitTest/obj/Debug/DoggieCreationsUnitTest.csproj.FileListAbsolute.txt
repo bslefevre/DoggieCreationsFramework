@@ -18,3 +18,5 @@ C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCre
 C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\HtmlAgilityPack.xml
 C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\Newtonsoft.Json.xml

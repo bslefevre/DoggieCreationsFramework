@@ -1,5 +1,6 @@
 ﻿using DoggieCreationsFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace DoggieCreationsUnitTest
@@ -63,6 +64,19 @@ namespace DoggieCreationsUnitTest
             var number = DcType<int>.ParseWaarde("1");
             Assert.IsTrue(((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.ContainsKey(number));
             Assert.AreEqual(1, number);
+        }
+
+        [TestMethod]
+        public void SearchTest_()
+        {
+            var result = SearchClass.GoogleSearch2("doggie creations.nl logo");
+            
+            //foreach (DoggieCreationsFramework.SearchClass.SearchResult searchResult in result)
+            //{
+                
+            //    SearchClass.GetImageFromUrl(searchResult.title, searchResult.url);
+                
+            //}        
         }
 
         [TestCleanup]
