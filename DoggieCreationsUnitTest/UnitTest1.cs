@@ -1,6 +1,7 @@
-﻿using DoggieCreationsFramework;
+﻿using System;
+using System.IO;
+using DoggieCreationsFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace DoggieCreationsUnitTest
@@ -69,20 +70,24 @@ namespace DoggieCreationsUnitTest
         [TestMethod]
         public void SearchTest_()
         {
-            var result = SearchClass.GoogleSearch2("doggie creations.nl logo");
-            
-            //foreach (DoggieCreationsFramework.SearchClass.SearchResult searchResult in result)
-            //{
-                
-            //    SearchClass.GetImageFromUrl(searchResult.title, searchResult.url);
-                
-            //}        
+            var result = SearchClass.GoogleSearch("doggie creations.nl logo");
+
+            foreach (var searchResult in result)
+            {
+                SearchClass.GetImageFromUrl(searchResult.titleNoFormatting, searchResult.unescapedUrl);
+            }
+      
+            var directoryInfo = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, "images"));
+            Assert.AreEqual(8, directoryInfo.GetFiles().Count());
         }
 
         [TestCleanup]
         public void TestCleanup()
         {
             ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Clear();
+
+            if (Directory.Exists(Path.Combine(Environment.CurrentDirectory, "images")))
+                Directory.Delete(Path.Combine(Environment.CurrentDirectory, "images"), true);
         }
     }
 }
