@@ -158,6 +158,10 @@ namespace DoggieCreationsFramework
                     }
                 }
             }
+            else if (memberExpression.Body is ConstantExpression)
+            {
+                AddLogging("Property is a constant!", ((ConstantExpression) memberExpression.Body).Value);
+            }
             else
             {
                 var member = (MemberExpression)memberExpression.Body;

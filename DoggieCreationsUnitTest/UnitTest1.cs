@@ -34,7 +34,7 @@ namespace DoggieCreationsUnitTest
         [TestMethod]
         public void FormatString_WithTranslate_Equals()
         {
-            const string first = "hallo";
+            var first = "hallo";
             var second = TranslateClass.Translate(first, "nl", "en");
             var result = "'{first}' is in het Engels '{second}'".Formatteer(() => new[] { first, second });
             Assert.AreEqual(2, ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Count());
@@ -44,9 +44,9 @@ namespace DoggieCreationsUnitTest
         [TestMethod]
         public void FormatString_FormatteerExpert_Equals()
         {
-            const string test = "waarde";
-            const string test2 = "hallo";
-            var result = "{test} - {test2}".Formatteer(() => new[] {test, test2});
+            var test = "waarde";
+            var test2 = "hallo";
+            var result = "{test} - {test2}".Formatteer(() => new [] {test, test2});
             Assert.AreEqual(2, ((DoggieCreationsUnitTestLogger)DcFrameworkBase.Logging).Logging.Count());
             Assert.AreEqual("waarde - hallo", result);
         }

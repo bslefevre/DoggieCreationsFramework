@@ -16,3 +16,5 @@ C:\Users\bjorn.le.fevre.Hyperion\documents\visual studio 2010\Projects\DoggieCre
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsFramework\obj\Debug\DoggieCreationsFramework.csprojResolveAssemblyReference.cache
+C:\Users\bjorn.le.fevre.Hyperion\Documents\Visual Studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bjorn.le.fevre.Hyperion\Documents\Visual Studio 2010\Projects\DoggieCreationsFramework\DoggieCreationsFramework\bin\Debug\Newtonsoft.Json.xml
