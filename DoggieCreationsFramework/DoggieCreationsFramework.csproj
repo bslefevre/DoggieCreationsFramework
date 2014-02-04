@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DcHelpers.cs" />
     <Compile Include="DcFrameworkBase.cs" />
+    <Compile Include="DcImage.cs" />
     <Compile Include="DcLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchClass.cs" />

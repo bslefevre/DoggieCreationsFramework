@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using DoggieCreationsFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -74,9 +75,14 @@ namespace DoggieCreationsUnitTest
 
             foreach (var searchResult in result)
             {
-                SearchClass.GetImageFromUrl(searchResult.titleNoFormatting, searchResult.unescapedUrl);
+                var imageFromUrl = SearchClass.GetImageFromUrl(searchResult.titleNoFormatting, searchResult.unescapedUrl);
+
+                var imgName = SearchClass.RemoveInvalidFilePathCharacters(searchResult.titleNoFormatting);
+                var filename = string.Format(@"{0}\images\thumbs\{1}.jpg", Environment.CurrentDirectory, imgName);
+                var resizeImage = imageFromUrl.ResizeImage(new Size(25, 25));
+                if (resizeImage != null) resizeImage.Save(filename);
             }
-      
+
             var directoryInfo = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, "images"));
             Assert.AreEqual(8, directoryInfo.GetFiles().Count());
         }
