@@ -80,7 +80,12 @@ namespace DoggieCreationsUnitTest
                 var imgName = SearchClass.RemoveInvalidFilePathCharacters(searchResult.titleNoFormatting);
                 var filename = string.Format(@"{0}\images\thumbs\{1}.jpg", Environment.CurrentDirectory, imgName);
                 var resizeImage = imageFromUrl.ResizeImage(new Size(25, 25));
-                if (resizeImage != null) resizeImage.Save(filename);
+                if (resizeImage != null)
+                {
+                    if (!Directory.Exists(string.Format(@"{0}\images\thumbs", SearchClass.BaseLocation)))
+                        Directory.CreateDirectory(string.Format(@"{0}\images\thumbs", SearchClass.BaseLocation));
+                    resizeImage.Save(filename);
+                }
             }
 
             var directoryInfo = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, "images"));

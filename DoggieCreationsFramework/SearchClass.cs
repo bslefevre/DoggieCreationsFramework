@@ -86,7 +86,7 @@ namespace DoggieCreationsFramework
             return r.Replace(filename, string.IsNullOrEmpty(replaceChar) ? string.Empty : replaceChar);
         }
 
-        private static string BaseLocation { get { return Environment.CurrentDirectory; } }
+        public static string BaseLocation { get { return Environment.CurrentDirectory; } }
 
         public class ResponseDataClass
         {
