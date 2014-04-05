@@ -22,3 +22,9 @@ C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTes
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.csprojResolveAssemblyReference.cache
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.dll
 C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\obj\Debug\DoggieCreationsUnitTest.pdb
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\Zen.Barcode.SSRS.dll
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\PdfSharp-WPF.dll
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\PdfSharp-WPF.pdb
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\PdfSharp-WPF.xml
+C:\Users\Doggie\Documents\GitHub\DoggieCreationsFramework\DoggieCreationsUnitTest\bin\Debug\de\PdfSharp-WPF.resources.dll
