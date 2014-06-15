@@ -67,6 +67,31 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProfessionalImaging", "http
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PhotoDatabase", "PhotoDatabase\PhotoDatabase.sqlproj", "{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PhotoWebsite(3)", "http://localhost:50484", "{1B5C20C0-3BA4-4EF2-BBD7-6D91C133203D}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{252e13b3-b6ad-451a-9787-2b82b33c833f}|DoggieCreationsFramework.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50484"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Visual Studio 2013\WebSites\PhotoWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50484\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50484"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Visual Studio 2013\WebSites\PhotoWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50484\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\Visual Studio 2013\WebSites\PhotoWebsite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +122,16 @@ Global
 		{A8D50F67-4C5F-4006-ACA7-16C1B1C143B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D50F67-4C5F-4006-ACA7-16C1B1C143B4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{A8D50F67-4C5F-4006-ACA7-16C1B1C143B4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336BBF42-20DA-43FD-B3BE-CA854BAA2D5B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1B5C20C0-3BA4-4EF2-BBD7-6D91C133203D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5C20C0-3BA4-4EF2-BBD7-6D91C133203D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5C20C0-3BA4-4EF2-BBD7-6D91C133203D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5C20C0-3BA4-4EF2-BBD7-6D91C133203D}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
